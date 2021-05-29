@@ -1,0 +1,10 @@
+name: example
+description: An example of using `simple_property_observer`
+version: 0.0.1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  simple_property_observer:
+    path: ../

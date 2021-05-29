@@ -1,0 +1,7 @@
+name: simple_property_observer
+description: A simple Dart package for observing property changes. Also known as property changed notifier.
+version: 1.0.0
+repository: https://github.com/ibako/simple_property_observer
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"

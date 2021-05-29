@@ -1,2 +1,2 @@
 # simple_property_observer
-A simple Dart package to observe changing of the properties. Also called property changed notifier.
+A simple Dart package for observing property changes. Also known as property changed notifier.
