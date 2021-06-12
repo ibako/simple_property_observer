@@ -10,5 +10,7 @@ dependencies:
     path: ../simple_property_observer
 
 dev_dependencies:
+  build_runner: ^2.0.4
   simple_property_observer_builder:
     path: ../simple_property_observer_builder
+

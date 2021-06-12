@@ -4,7 +4,7 @@ part 'observable_example.g.dart';
 
 /// An example of [PropertyObservable] class.
 @propertyObservable
-class ObservableExample with _ObservableExamplePropertyObservable {
+class ObservableExample with PropertyObservable, _ObservableMembers {
   /// **Public** setter is auto generated.
   @observable
   String? get observableString1 => __observableString1;

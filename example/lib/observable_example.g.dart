@@ -1,16 +1,6 @@
 part of 'observable_example.dart';
 
-mixin _ObservableExamplePropertyObservable {
-  final _observerHolder = ObserverHolder();
-
-  /// Register a property changes observer.
-  void registerObserver(PropertyChangedCallback observer) =>
-      _observerHolder.register(observer);
-
-  /// Unregister a property changes observer.
-  void unregisterObserver(PropertyChangedCallback observer) =>
-      _observerHolder.unregister(observer);
-
+mixin _ObservableMembers on PropertyObservable {
   String? __observableString1;
 
   /// **Public** setter is auto generated.
@@ -20,7 +10,7 @@ mixin _ObservableExamplePropertyObservable {
     }
     final oldValue = __observableString1;
     __observableString1 = value;
-    _observerHolder.notify(PropertyChangedInfo(
+    notifyPropertyChanged(PropertyChangedInfo(
         'observableString1', oldValue, __observableString1));
   }
 
@@ -33,7 +23,7 @@ mixin _ObservableExamplePropertyObservable {
     }
     final oldValue = __observableString2;
     _observableString2 = value;
-    _observerHolder.notify(PropertyChangedInfo(
+    notifyPropertyChanged(PropertyChangedInfo(
         'observableString2', oldValue, __observableString2));
   }
 }
