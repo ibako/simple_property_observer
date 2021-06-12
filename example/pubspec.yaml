@@ -7,4 +7,4 @@ environment:
 
 dependencies:
   simple_property_observer:
-    path: ../
+    path: ../simple_property_observer
