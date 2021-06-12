@@ -8,3 +8,7 @@ environment:
 dependencies:
   simple_property_observer:
     path: ../simple_property_observer
+
+dev_dependencies:
+  simple_property_observer_builder:
+    path: ../simple_property_observer_builder

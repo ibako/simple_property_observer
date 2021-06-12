@@ -1,0 +1,14 @@
+name: simple_property_observer_builder
+description: Dart package for auto generating a property observable class. This package is only for dev_environment. See also simple_property_observer package.
+version: 1.0.0
+repository: https://github.com/ibako/simple_property_observer
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  simple_property_observer:
+    path: ../simple_property_observer
+
+dev_dependencies:
+  test: ^1.17.5
