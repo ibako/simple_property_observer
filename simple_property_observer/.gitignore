@@ -76,3 +76,4 @@ build/
 
 # Unnecessary files
 *.lock
+.metadata
