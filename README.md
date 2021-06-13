@@ -127,3 +127,10 @@ void main() {
 ```
 
 You can also cancel observing with the `unregisterObserver` method.
+
+# Package page (pub.dev)
+- https://pub.dev/packages/simple_property_observer
+- https://pub.dev/packages/simple_property_observer_builder
+
+# API Document
+- https://pub.dev/documentation/simple_property_observer/latest/simple_property_observer/simple_property_observer-library.html
