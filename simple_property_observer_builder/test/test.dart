@@ -13,6 +13,6 @@ Future<void> main() async {
 
 const _expectedAnnotatedTests = {
   'NotAnnotatedGetter',
-  //'PrivateSetter',
-  //'PublicSetter',
+  'PrivateSetter',
+  'PublicSetter',
 };
