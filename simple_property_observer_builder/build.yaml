@@ -1,7 +1,7 @@
 builders:
   property_observable:
     target: ":property_observable_generator"
-    import: "package:simple_property_observer_builder/builder.dart"
+    import: "package:simple_property_observer_builder/simple_property_observer_builder.dart"
     builder_factories: ["propertyObservableFactory"]
     build_extensions: {".dart": [".prop.g.dart"]}
     auto_apply: dependents
