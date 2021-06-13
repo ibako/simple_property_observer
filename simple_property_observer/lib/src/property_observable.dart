@@ -1,5 +1,6 @@
 import 'property_changed_info.dart';
 
+/// Mixin for property-observing pattern.
 mixin PropertyObservable {
   /// The list of observers.
   final _observers = <PropertyChangedCallback>[];

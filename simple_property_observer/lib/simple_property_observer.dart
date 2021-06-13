@@ -1,3 +1,4 @@
+/// Including property observable mixin and metadata.
 library simple_property_observer;
 
 export 'src/metadata/observable.dart';
