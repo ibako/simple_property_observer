@@ -3,7 +3,7 @@ builders:
     target: ":property_observable_generator"
     import: "package:simple_property_observer_builder/builder.dart"
     builder_factories: ["propertyObservableFactory"]
-    build_extensions: {".dart": [".property_observable.g.dart"]}
+    build_extensions: {".dart": [".prop.g.dart"]}
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]

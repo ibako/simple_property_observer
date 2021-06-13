@@ -1,5 +1,6 @@
 name: example
 description: An example of using `simple_property_observer`
+publish_to: 'none'
 version: 0.0.1
 
 environment:

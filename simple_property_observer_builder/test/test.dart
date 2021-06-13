@@ -12,6 +12,8 @@ Future<void> main() async {
 }
 
 const _expectedAnnotatedTests = {
+  'DocumentationCommentOneLine',
+  'DocumentationCommentMultiLine',
   'NotAnnotatedGetter',
   'PrivateSetter',
   'PublicSetter',

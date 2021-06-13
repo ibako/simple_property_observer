@@ -36,14 +36,22 @@ class PropertyObservableGenerator
 
       for (var metadata in metadataList) {
         final source = metadata.toSource();
-        if (source == '@observableWithPrivateSetter') {
+        final isPrivateSetter = source == '@observableWithPrivateSetter';
+        final isPublicSetter = source == '@observable';
+        final shouldGenerate = isPrivateSetter || isPublicSetter;
+
+        if (shouldGenerate) {
           _generateField(buffer, getter);
+          _generateDocumentationComment(buffer, getter);
+        }
+
+        if (isPrivateSetter) {
           _generatePrivateSetterDeclaration(buffer, getter);
-          _generateSetterProcess(buffer, getter);
-          break;
-        } else if (source == '@observable') {
-          _generateField(buffer, getter);
+        } else if (isPublicSetter) {
           _generatePublicSetterDeclaration(buffer, getter);
+        }
+
+        if (shouldGenerate) {
           _generateSetterProcess(buffer, getter);
           break;
         }
@@ -59,6 +67,15 @@ class PropertyObservableGenerator
     final type = element.returnType.toString();
     final name = '__${element.name}';
     buffer.writeln('  $type $name;');
+  }
+
+  void _generateDocumentationComment(
+      StringBuffer buffer, PropertyAccessorElement element) {
+    final comment = element.documentationComment;
+    if (comment == null) {
+      return;
+    }
+    buffer.writeln(comment);
   }
 
   void _generatePrivateSetterDeclaration(

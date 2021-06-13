@@ -1,4 +1,10 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
 part of 'observable_example.dart';
+
+// **************************************************************************
+// PropertyObservableGenerator
+// **************************************************************************
 
 mixin _ObservableMembers on PropertyObservable {
   String? __observableString1;
@@ -22,7 +28,7 @@ mixin _ObservableMembers on PropertyObservable {
       return;
     }
     final oldValue = __observableString2;
-    _observableString2 = value;
+    __observableString2 = value;
     notifyPropertyChanged(PropertyChangedInfo(
         'observableString2', oldValue, __observableString2));
   }
